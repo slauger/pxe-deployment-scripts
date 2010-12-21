@@ -1,0 +1,69 @@
+DEFAULT x
+ALLOWOPTIONS 0
+PROMPT 1
+TIMEOUT 600
+KBDMAP german.kbd
+MENU TITLE PXE Boot Menu
+
+# Index Menue
+DISPLAY conf/doc/index.txt
+
+# Hilfetasten
+F1  conf/doc/help.txt
+F2  conf/doc/index.txt
+F3  conf/doc/f3.txt
+F4  conf/doc/help.txt
+F5  conf/doc/help.txt
+F6  conf/doc/help.txt
+F7  conf/doc/help.txt
+F8  conf/doc/help.txt
+F9  conf/doc/help.txt
+F10 conf/doc/help.txt
+
+## Grafisches Menu
+INCLUDE conf/images/menu.conf
+
+# Live Linux Systeme
+INCLUDE conf/images/squeeze32_live.conf
+INCLUDE conf/images/maverick32_live.conf
+INCLUDE conf/images/grml.conf
+INCLUDE conf/images/reactos.conf
+
+# Linux Deployment Server (FAI)
+INCLUDE conf/images/fai.conf
+
+# Netinstall Images
+INCLUDE conf/images/debian5_installer.conf
+INCLUDE conf/images/ubuntu10.10_installer.conf
+INCLUDE conf/images/ubuntu10.04_installer.conf
+INCLUDE conf/images/archlinux_installer.conf
+INCLUDE conf/images/opensuse.conf
+
+## Diagnose-Tools
+INCLUDE conf/images/memcheck86+.conf
+INCLUDE conf/images/dell_diag32.conf
+
+## Festplattentools
+INCLUDE conf/images/seatools.conf
+INCLUDE conf/images/pxeknife.conf
+INCLUDE conf/images/dban.conf
+
+## Diagnose: HDD
+#INCLUDE conf/images/hdd_diag.conf
+#INCLUDE conf/images/hdd_utils.conf
+#INCLUDE conf/images/seatools.conf
+#INCLUDE conf/images/ubcd.conf
+#INCLUDE conf/images/pxeknife.conf
+
+## Netboot
+INCLUDE conf/images/bko.conf
+INCLUDE conf/images/netbootme.conf
+
+## Sonstiges
+INCLUDE conf/images/supergrubdisk.conf
+
+## Boot von lokaler Festplatte
+LABEL      x
+MENU LABEL Boot von lokaler Festplatte
+LOCALBOOT  0
+

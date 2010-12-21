@@ -1,0 +1,20 @@
+Scripte zum automatisierten deployen der Boot-Images
+
+- config.sh	Hier koennen oefters benoetigte Konfigurationsvariablen gespeichert
+		werden, etwa ein CD Mirror.
+		Das File wird in der deploy.sh included.
+
+- deploy.sh	Script zum starten des Deploy Vorganges.
+
+		Syntax: ./deploy.sh NAMEDESIMAGES
+			./deploy.sh debian5_installer64
+
+		Um alle Images neu zu deployen:
+		
+		Syntax: ./deploy.sh --all
+
+- bin/		Die Scripte zum deployen der Images. Jedes Image hat sein eigenes
+		Deploy Script.
+		
+		Format: deploy_NAMEDESIMAGES.sh
+			deploy_debian5_installer64.sh
