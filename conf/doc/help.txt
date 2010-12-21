@@ -1,0 +1,8 @@
+PXE Boot Menu: Help
+~~~~~~~~~~~~~~~~~~~
+
+F1: display default menu             F6:  none
+F2: display menu for windows         F7:  none
+F3: display menu for diagnostics     F8:  none
+F4: none                             F9:  none
+F5: none                             F10: none
