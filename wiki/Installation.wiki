@@ -17,7 +17,7 @@ apt-get install portmap dhcp3-server tftpd-hpa nfs-kernel-server syslinux portma
 *SVN Checkout*
 {{{
 cd /srv/
-svn checkout http://pxe-deployment-scripts.googlecode.com/svn/trunk/ pxe-deployment-scripts-read-only 
+svn checkout http://pxe-deployment-scripts.googlecode.com/svn/ pxe-deployment-scripts-read-only 
 mv pxe-deployment-scripts-read-only tftp
 }}}
 
