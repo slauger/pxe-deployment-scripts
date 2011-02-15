@@ -1,24 +1,24 @@
 
-
-
- d:  Debian 5.0 Installer (i386)      diskmgr:  Seagate Disk Managers
- d2: Debian 5.0 Installer (amd64)     powermax: Maxtor PowerMAX
- u1: Ubuntu 10.04 Installer (i386)    maxblast: Maxtor Maxblast 
- u2: Ubuntu 10.04 installer (amd64)   ssdm:     Samsung Disk Manager
- u3: Ubuntu 10.10 Installer (i386)    datalife: WD Data Lifeguard
- u4: Ubuntu 10.10 Installer (amd64)   dlgudma:  WD Data Lifeguard UDMA
- l1: GRML Live Linux (i386)           dft:      Hitatchi Fitness Test
- l2: GRML Live Linux (amd64)          ibmft:    IBM Feature Tool
- a1: Arch Linux Installer (i686)      seatools: Seagte Sea Tools
- a2: Arch Linux Installer (x86_64)    dban:     Darik's Boot and Nuke
- s1: openSUSE Installer (i586)        
- s2: openSUSE Installer (x86_64)      memcheck:  memtest86
- reactos: ReactOS Live CD             memcheckp  memtest86+
-                                      ddiag:     Dell Diagnostic Tools
- sgd{1,2}: Super GRUB DISC 1/2        netbootme: netboot.me
- rescatux: Rescatux Live CD           bko:       boot.kernel.org
- ntpasswd: NT Password Recovery       menu:      c32 based menu
+ d{v}{32,64}: Debian Installer         dban:     Darik's Boot and Nuke
+ u{v}{32,64}: Ubuntu Installer         seatools: Seagte Sea Tools
+ g{32,64}:    GRML Live Linux          diskmgr:  Seagate Disk Managers
+ a{32,64}:    Arch Linux Installer     powermax: Maxtor PowerMAX
+ s{32,64}:    openSUSE 11.3 Installer  maxblast: Maxtor Maxblast 
+                                       ssdm:     Samsung Disk Manager
+                                       datalife: WD Data Lifeguard
+ backtrack:  Backtrack Live            dlgudma:  WD Data Lifeguard UDMA
+ reactos:    ReactOS Live              dft:      Hitatchi Fitness Test
+ avira:      Avira Rescue System       ibmft:    IBM Feature Tool
+ clonezilla: CloneZilla Live          
+ gparted:    gParted Live              ddiag:     Dell Diagnostic Tools      
+ sgd{1,2}:   Super GRUB DISC 1/2       memcheckp  memtest86+
+ rescatux:   Rescatux Live CD          memcheck:  memtest86
+ ntpasswd:   NT Password Recovery      ddiag:     Dell Diagnostic Tools
+                                       bko:       boot.kernel.org
+ Zeichen-Erklaerung:                   netbootme: netboot.me
+ {v}   = Beliebige Versionsnummer      menu:      c32 based menu
+ {1,2} = 1 oder 2                      local:     Boot von lokaler HDD           
 
  Livebuilds: lenny{32,64}, squeeze{32,64}, maverick{32,64}, natty{32,64}
  
-                                    linux-dev.de Networks PXE Boot Menu
+                                     linux-dev.de Networks PXE Boot Menu

@@ -3,7 +3,7 @@
 permissions.sh		Resettet die Rechte (Files auf 664, Folder auf 775, tftp:root)
 
 boot/			Generierte Boot-Images; Hier sollten keine ISO-Files einfach
-			so abgelegt werden. Fuer jedes Image sollte ein Deployscript 
+			so abgelegt werden. Fuer jedes Image sollte ein Deploscript 
 			geschrieben werden
 
 conf/			Konfigurationsdateien fuer den TFTP/PXE-Server, bzw. das 

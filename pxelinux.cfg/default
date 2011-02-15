@@ -1,7 +1,7 @@
-DEFAULT x
+DEFAULT local
 ALLOWOPTIONS 0
 PROMPT 1
-TIMEOUT 600
+TIMEOUT 99999
 KBDMAP german.kbd
 MENU TITLE PXE Boot Menu
 
@@ -24,22 +24,32 @@ F10 conf/doc/help.txt
 INCLUDE conf/images/menu.conf
 
 # Live Linux Systeme
-INCLUDE conf/images/squeeze32_live.conf
-INCLUDE conf/images/maverick32_live.conf
 INCLUDE conf/images/grml.conf
 INCLUDE conf/images/reactos.conf
+
+# Eigene Live Builds
+INCLUDE conf/images/lenny32.conf
+INCLUDE conf/images/lenny64.conf
+INCLUDE conf/images/squeeze32.conf
+INCLUDE conf/images/squeeze64.conf
+INCLUDE conf/images/maverick32.conf
+INCLUDE conf/images/maverick64.conf
+INCLUDE conf/images/natty32.conf
+INCLUDE conf/images/natty64.conf
 
 # Linux Deployment Server (FAI)
 INCLUDE conf/images/fai.conf
 
 # Netinstall Images
 INCLUDE conf/images/debian5_installer.conf
+INCLUDE conf/images/debian6_installer.conf
 INCLUDE conf/images/ubuntu10.10_installer.conf
 INCLUDE conf/images/ubuntu10.04_installer.conf
 INCLUDE conf/images/archlinux_installer.conf
-INCLUDE conf/images/opensuse.conf
+INCLUDE conf/images/opensuse11.3.conf
 
 ## Diagnose-Tools
+INCLUDE conf/images/memcheck86.conf
 INCLUDE conf/images/memcheck86+.conf
 INCLUDE conf/images/dell_diag32.conf
 
@@ -61,9 +71,13 @@ INCLUDE conf/images/netbootme.conf
 
 ## Sonstiges
 INCLUDE conf/images/supergrubdisk.conf
+INCLUDE conf/images/ntpasswd.conf
+INCLUDE conf/images/avira.conf
+INCLUDE conf/images/clonezilla.conf
+INCLUDE conf/images/gparted.conf
 
 ## Boot von lokaler Festplatte
-LABEL      x
+LABEL      local
 MENU LABEL Boot von lokaler Festplatte
 LOCALBOOT  0
 
