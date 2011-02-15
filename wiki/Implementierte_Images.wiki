@@ -1,0 +1,42 @@
+#summary Derzeit implementierte Images
+#labels Featured
+
+= Implementierte Images =
+{{{
+./deploy_archlinux_2010.05_x86_64.sh
+./deploy_ubuntu10.10_installer_amd64.sh
+./deploy_dell_diag32.sh
+./deploy_ubuntu10.04_installer_i386.sh
+./deploy_grml64.sh
+./deploy_netbootme.sh
+./deploy_hitachi_dft32.sh
+./deploy_debian5_installer_i386.sh
+./deploy_supergrub2disk.sh
+./deploy_freedos.sh
+./deploy_dban.sh
+./deploy_supergrubdisk.sh
+./deploy_memdisk.sh
+./deploy_grml.sh
+./deploy_ntpasswd.sh
+./deploy_ubuntu10.04_installer_amd64.sh
+./deploy_archlinux_2010.05_i686.sh
+./deploy_menu.c32.sh
+./deploy_debian5_installer_amd64.sh
+./deploy_rescatux.sh
+./deploy_seatools.sh
+./deploy_ubuntu10.10_installer_i386.sh
+./deploy_debian6_installer_i386.sh
+./deploy_memtest86.sh
+./deploy_memtest86+.sh
+./deploy_clonezilla.sh
+./deploy_backtrack.sh
+./deploy_opensuse_11.3_i586.sh
+./deploy_opensuse_11.3_x86_64.sh
+./deploy_avira_rescue.sh
+./deploy_reactos.sh
+./deploy_bko.sh
+./deploy_debian6_installer_amd64.sh
+./deploy_gparted.sh
+}}}
+
+Bis auf ReactOS wurden alle Images erfolgreich getestet. Die ReactOS Live CD friert aus bisher noch unbekannten Gründen während des Bootvorgang ein.
