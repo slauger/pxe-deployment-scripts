@@ -1,0 +1,24 @@
+
+
+
+ INSTALLATION UND LIVESYSTEME           FESTPLATTENTESTS
+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~           ~~~~~~~~~~~~~~~~
+ d:  Debian 5.0 Installer (i386)        fd: Fujitsu Drive Test
+ d2: Debian 5.0 Installer (amd64)       b:  Maxtor PowerMAX
+ u1: Ubuntu 10.04 Installer (i386)      bs: Maxtor/Seagte - Sea Tools
+ u2: Ubuntu 10.04 installer (amd64)     c:  Samsung HUTIL
+ u3: Ubuntu 10.10 Installer (i386)      d:  IBM DriveFitness Test
+ u4: Ubuntu 10.10 Installer (amd64)     e:  Seagate Seatools
+ l1: GRML Live Linux (i386)             f:  Western Digital Diag
+ l2: GRML Live Linux (amd64)
+ a1: Arch Linux Installer (i686)
+ a2: Arch Linux Installer (x86_64)
+ s1: openSUSE Installer (i586)
+ s2: openSUSE Installer (x86_64)
+
+ TOOLS                                  SONSTIGES
+ ~~~~~                                  ~~~~~~~~~
+ sgd1: Super GRUB Disc                  x: Von Festplatte starten
+ sgd2: Super GRUB Disc 2                gh: Ghost 2002
+ rescatux: Rescatux Live                ft: HGST Feature 
+ ntpasswd: NT Password Recovery         ddiag: DELL 32bit Diagnostics
