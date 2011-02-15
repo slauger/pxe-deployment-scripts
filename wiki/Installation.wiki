@@ -1,0 +1,66 @@
+#summary Installation und Image Deployment
+#labels Featured,Phase-Deploy,Phase-Requirements
+
+= Installation =
+
+*Pakete installieren*
+{{{
+apt-get install portmap dhcp3-server tftpd-hpa nfs-kernel-server syslinux portmap unrar unzip
+}}}
+
+*NFS-Share anlegen*
+{{{
+# /etc/exports
+/srv/nfsroot *(ro,no_root_squash,async,no_subtree_check)
+}}}
+
+*SVN Checkout*
+{{{
+cd /srv/
+svn checkout http://pxe-deployment-scripts.googlecode.com/svn/trunk/ pxe-deployment-scripts-read-only 
+mv pxe-deployment-scripts-read-only tftp
+}}}
+
+*Konfiguration für Deployment anpassen*
+{{{
+cd /srv/tftp/deploy
+vim config.sh
+}}}
+
+*Konfigurationen für pxelinux.cfg generieren*
+_Derzeit noch nicht implementiert. Wird später dazu da Platzhalter (%nfsroot%) in den Konfigurationen mittels sed zu ersetzen. Derzeit ist die komplette Konfiguration allerdings statisch_
+{{{
+cd /srv/tftp/deploy
+
+# Nuer die Datei grml.conf aktualisieren
+./generate_pxecfg.sh grml.conf
+
+# Alle Dateien aktualisieren
+./generate_pxecfg.sh --all
+}}}
+
+*Image Deployment*
+{{{
+cd /srv/tftp/deploy
+
+# Deployvorgang für ein Image starten
+./deploy grml
+
+# Deployvorgang für alle Images starten.
+# Kann bei schlechter Internetanbindung viele Stunden dauern!
+# Bei einer 100 Mbit Anbindung ca. ~15 Minuten
+./deploy --all 
+}}}
+
+*Rechte automatisiert anpassen (tftp:root)*
+{{{
+cd /srv/tftp
+./permissions.sh
+}}}
+
+*Sonderfall: Live Linux Images (Debian/Ubuntu)*
+{{{
+cd /srv/tftp/deploy/extra/
+vim deploy_live_linux.sh # ggf. Konfiguration anpassen
+./deploy_live_linux.sh debian squeeze amd64 standard
+}}}
