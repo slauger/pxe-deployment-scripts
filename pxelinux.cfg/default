@@ -28,14 +28,14 @@ INCLUDE conf/images/grml.conf
 INCLUDE conf/images/reactos.conf
 
 # Eigene Live Builds
-INCLUDE conf/images/lenny32.conf
-INCLUDE conf/images/lenny64.conf
-INCLUDE conf/images/squeeze32.conf
-INCLUDE conf/images/squeeze64.conf
-INCLUDE conf/images/maverick32.conf
-INCLUDE conf/images/maverick64.conf
-INCLUDE conf/images/natty32.conf
-INCLUDE conf/images/natty64.conf
+INCLUDE conf/images/lenny32_live.conf
+INCLUDE conf/images/lenny64_live.conf
+INCLUDE conf/images/squeeze32_live.conf
+INCLUDE conf/images/squeeze64_live.conf
+INCLUDE conf/images/maverick32_live.conf
+INCLUDE conf/images/maverick64_live.conf
+INCLUDE conf/images/natty32_live.conf
+INCLUDE conf/images/natty64_live.conf
 
 # Linux Deployment Server (FAI)
 INCLUDE conf/images/fai.conf
