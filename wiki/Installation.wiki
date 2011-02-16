@@ -5,7 +5,7 @@
 
 *Pakete installieren*
 {{{
-apt-get install portmap dhcp3-server tftpd-hpa nfs-kernel-server syslinux portmap unrar unzip
+apt-get install portmap dhcp3-server tftpd-hpa nfs-kernel-server syslinux portmap live-build live-config-sysvinit unrar unzip
 }}}
 
 *NFS-Share anlegen*
