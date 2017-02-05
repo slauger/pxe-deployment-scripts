@@ -1,4 +1,6 @@
-# Verzeichnisse / Dateien 
+# PXE Deployment Scipts
+
+## Verzeichnisse / Dateien 
 
 ```
 permissions.sh		Resettet die Rechte (Files auf 664, Folder auf 775, tftp:root)
@@ -11,9 +13,11 @@ conf/				Konfigurationsdateien fuer den TFTP/PXE-Server, bzw. das
 					Auswahlmenue
 
 deploy/				Deploy-Scripte, siehe deploy/README
+```
 
-== Benoetigte Debian-Pakete ==
+## Benoetigte Debian-Pakete
 
+```
 dhcp3-server		Wenn dieser Server nicht nur TFTP, sondern auch direkt
 					den DHCP-Server spielen soll
 
